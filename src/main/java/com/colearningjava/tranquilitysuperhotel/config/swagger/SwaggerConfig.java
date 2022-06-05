@@ -50,7 +50,7 @@ public class SwaggerConfig {
                         "http://transquilitysuperhotel.com",
                         "tran.superhotel@.com"),
                 "Api License",
-                "http://cederxpress.io",
+                "http://tranquility.io",
                 Collections.emptyList()
         );
     }
