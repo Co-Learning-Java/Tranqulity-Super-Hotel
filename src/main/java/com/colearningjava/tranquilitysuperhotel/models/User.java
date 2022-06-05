@@ -1,12 +1,11 @@
 package com.colearningjava.tranquilitysuperhotel.models;
 
 import com.colearningjava.tranquilitysuperhotel.enums.Gender;
+import com.colearningjava.tranquilitysuperhotel.enums.Role;
 import com.sun.istack.NotNull;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="users")
@@ -26,4 +25,6 @@ public class User extends Base{
     private String username;
     private String password;
     private Gender gender;
+    @Enumerated(EnumType.STRING)
+    private Role role;
 }

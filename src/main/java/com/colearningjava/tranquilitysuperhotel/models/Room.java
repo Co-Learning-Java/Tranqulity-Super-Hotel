@@ -17,10 +17,6 @@ import java.util.List;
 public class Room extends Base{
     @Column(unique = true)
     private String number;
-    private BigDecimal price;
-
     @ManyToOne
     private RoomType roomType;
-    @OneToMany
-    private List<ImgUrl> photos = new ArrayList<>();
 }
